@@ -32,12 +32,20 @@ for filename in os.listdir("."):
 
         # Replace @
 	filename = replacechar(filename, "@", "a")
+	filename = replacechar(filename, "á", "a")
+	filename = replacechar(filename, "à", "a")
+	filename = replacechar(filename, "ä", "a")
+	filename = replacechar(filename, "â", "a")
         
         # Replace special characters
 	filename = replacechar(filename, "é", "e")
 	filename = replacechar(filename, "è", "e")
 	filename = replacechar(filename, "ë", "e")
+	filename = replacechar(filename, "ê", "e")
 
+	filename = replacechar(filename, "í", "i")
+	filename = replacechar(filename, "ì", "i")
 	filename = replacechar(filename, "ï", "i")
+	filename = replacechar(filename, "î", "i")
 
 	filename = replacechar(filename, "ç", "c")
